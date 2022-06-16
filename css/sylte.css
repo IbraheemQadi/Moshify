@@ -241,3 +241,27 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Inputs */
+
+.input {
+  background-color: #fff;
+  border-radius: 4rem;
+  border: 0;
+  border: 2px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  margin: 2rem;
+  outline: 0;
+  padding: 2rem 3rem;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+@media (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
