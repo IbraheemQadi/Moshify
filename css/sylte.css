@@ -323,11 +323,11 @@ a {
   opacity: 0.8;
 }
 
-.card--secondary .badge--secondary{
+.card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
 
-.card--primary .badge--primary{
+.card--primary .badge--primary {
   background-color: #126de4;
 }
 
@@ -340,6 +340,18 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.plan--populer .card__header {
+  position: relative;
+}
+
+.plan--populer .card__header::before {
+  content: url(../img/popular.svg);
+  position: absolute;
+  top: -6px;
+  right: 5%;
+  width: 40px;
 }
 
 @media screen and (min-width: 1024px) {
