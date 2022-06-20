@@ -17,6 +17,7 @@
 /* Typography */
 
 html {
+  /* 1 rem = 10px */
   font-size: 62.5%;
 }
 
@@ -207,6 +208,14 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: 0;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -293,7 +302,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -688,7 +697,7 @@ a {
   }
 }
 
-/* hero */
+/* hero block */
 .hero {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
 }
@@ -711,5 +720,36 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain block */
+.domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  max-width: 670px;
+  margin: 4rem auto;
+}
+
+.domain .domain__prices {
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.domain__prices .list__item {
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .domain .domain__prices {
+    /* auto-fit=the number of col depend on elements count */
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
