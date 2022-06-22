@@ -210,7 +210,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -309,6 +309,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -381,10 +382,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--populer {
-  transform: scale(1.1);
-}
-
 .plan--populer .card__header {
   position: relative;
 }
@@ -405,6 +402,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .plan--populer {
+    transform: scale(1.1);
+  }
   .plan__name {
     font-size: 1.4rem;
   }
@@ -448,6 +448,7 @@ a {
   font-size: 3rem;
   font-style: italic;
   line-height: 1.3;
+  margin: 3rem 0;
 }
 
 .quote__text::before {
@@ -549,6 +550,10 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 .callout--primary {
@@ -754,11 +759,12 @@ a {
 }
 
 .domain .domain__prices {
+  color: var(--color-headings);
   display: grid;
   font-size: 2rem;
   font-weight: 600;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
@@ -839,6 +845,7 @@ a {
 
 .footer a {
   color: #777;
+  font-size: 1.5rem;
   transition: 0.3s;
 }
 
@@ -888,12 +895,13 @@ a {
   .footer .collapible__content {
     opacity: 1;
     max-height: 100vh;
+    font-size: 1.5rem;
   }
   .footer__brand {
     order: -1;
     margin-top: 1rem;
   }
-  . .footer__copyright {
+  .footer__copyright {
     font-size: 1.5rem;
   }
   .footer__section {
