@@ -845,7 +845,7 @@ a {
 
 .footer a {
   color: #777;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: 0.3s;
 }
 
@@ -909,5 +909,8 @@ a {
   }
   .footer__heading {
     font-size: 1.6rem;
+  }
+  .footer a {
+    font-size: 1.5rem;
   }
 }
