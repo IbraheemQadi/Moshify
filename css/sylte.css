@@ -21,7 +21,7 @@
   color: white;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   html{
     -webkit-tap-highlight-color: red;
   }
