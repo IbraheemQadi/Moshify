@@ -21,6 +21,12 @@
   color: white;
 }
 
+@media (min-width:768px) {
+  html{
+    -webkit-tap-highlight-color: red;
+  }
+}
+
 html {
   /* 1 rem = 10px */
   font-size: 62.5%;
