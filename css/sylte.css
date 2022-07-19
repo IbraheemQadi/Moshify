@@ -21,9 +21,9 @@
   color: white;
 }
 
-@media (max-width:768px) {
-  html{
-    -webkit-tap-highlight-color: red;
+@media (max-width: 768px) {
+  html {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
